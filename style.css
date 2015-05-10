@@ -1,1 +1,81 @@
-@font-face{font-family:"Source Code Pro";src:url("//www.clarkok.com/blog/sourcecodepro.ttf")}html,body{margin:0;padding:0;background-color:#eee;position:relative;height:100%;width:100%;font-family:"Source Code Pro"}#background{position:relative}#info{position:absolute;width:300px;height:300px;margin-top:-150px;margin-left:-150px;top:50%;left:50%;border-radius:150px;transition:all .3s;background:#fff;}#info:hover{width:450px;margin-left:-225px;}#info:hover #content{transition:all .5s;opacity:1}#logo{width:300px;height:300px;position:absolute;left:0;z-index:3}#links{width:275px;height:300px;position:absolute;right:0}#content{top:0;bottom:0;margin:auto;position:absolute;height:8.25em;opacity:0;transition:all .2s;}#content a,#content span{line-height:1.5em;display:block;color:#999;text-decoration:none;text-indent:5em;}#content a[href],#content span[href]{color:#900;}#content a[href]:hover,#content span[href]:hover{text-decoration:underline}#content span{color:#999;font-weight:700;text-indent:2em;font-size:1.5em}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("//www.clarkok.com/blog/sourcecodepro.ttf");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: "Source Code Pro";
+}
+#background {
+  position: relative;
+}
+#info {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  top: 50%;
+  left: 50%;
+  border-radius: 150px;
+  transition: all 0.3s;
+  background: #fff;
+  z-index: 3;
+}
+#info:hover {
+  width: 450px;
+  margin-left: -225px;
+}
+#info:hover #content {
+  transition: all 0.5s;
+  opacity: 1;
+}
+#logo {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+}
+#links {
+  width: 275px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+}
+#content {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  height: 8.25em;
+  opacity: 0;
+  transition: all 0.2s;
+}
+#content a,
+#content span {
+  line-height: 1.5em;
+  display: block;
+  color: #999;
+  text-decoration: none;
+  text-indent: 5em;
+}
+#content a[href],
+#content span[href] {
+  color: #900;
+}
+#content a[href]:hover,
+#content span[href]:hover {
+  text-decoration: underline;
+}
+#content span {
+  color: #999;
+  font-weight: 700;
+  text-indent: 2em;
+  font-size: 1.5em;
+}
