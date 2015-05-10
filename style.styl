@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("//www.clarkok.com/blog/sourcecodepro.ttf");
+}
+
+html, body
+  margin 0
+  padding 0
+  background-color #eee
+  position relative
+  height 100%
+  width 100%
+  font-family "Source Code Pro"
+
+#background
+  position relative
+
+#info
+  position absolute
+  width 300px
+  height 300px
+  margin-top -150px
+  margin-left -150px
+  top 50%
+  left 50%
+  border-radius 150px
+  transition all .3s
+  background white
+  &:hover
+    width 450px
+    margin-left -225px
+    #content
+      transition all .5s
+      opacity 1
+
+#logo
+  width 300px
+  height 300px
+  position absolute
+  left 0
+  z-index 3
+
+#links
+  width 275px
+  height 300px
+  position absolute
+  right 0
+
+#content
+  top 0
+  bottom 0
+  margin auto
+  position absolute
+  height 8.25em
+  opacity 0
+  transition all .2s
+  a, span
+    line-height 1.5em
+    display block
+    color #999
+    text-decoration none
+    text-indent 5em
+    &[href]
+      color #900
+      &:hover
+        text-decoration underline
+  span
+    color #999
+    font-weight 700
+    text-indent 2em
+    font-size 1.5em
